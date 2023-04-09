@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="calculator">
+      <table class="w-96 border-collapse text-white text-center h-60">
+        <tr>
+          <td colspan="4" class="w-full h-16 bg-zinc-800">
+            <input
+              type="text"
+              name="display"
+              disabled
+              class="w-full bg-zinc-800 font-bold text-end pr-1"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="one"
+              value="1"
+              onclick="calculator.display.value += 1"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="two"
+              value="2"
+              onclick="calculator.display.value += 2"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="three"
+              value="3"
+              onclick="calculator.display.value += 3"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="plus"
+              value="+"
+              onclick="calculator.display.value += '+'"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="four"
+              value="4"
+              onclick="calculator.display.value += 4"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="five"
+              value="5"
+              onclick="calculator.display.value += 5"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="six"
+              value="6"
+              onclick="calculator.display.value += 6"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="minus"
+              value="-"
+              onclick="calculator.display.value += '-'"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="seven"
+              value="7"
+              onclick="calculator.display.value += 7"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="eight"
+              value="8"
+              onclick="calculator.display.value += 8"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="nine"
+              value="9"
+              onclick="calculator.display.value += 9"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="times"
+              value="x"
+              onclick="calculator.display.value += '*'"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              id="clear"
+              name="clear"
+              value="C"
+              onclick="calculator.display.value = ''"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="zero"
+              value="0"
+              onclick="calculator.display.value += '0'"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="doit"
+              value="="
+              onclick="calculator.display.value = eval(calculator.display.value)"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+          <td class="w-24 bg-zinc-900 hover:bg-zinc-500">
+            <input
+              type="button"
+              name="div"
+              value="/"
+              onclick="calculator.display.value += '/'"
+              class="w-full h-full bg-zinc-900 hover:bg-zinc-500"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

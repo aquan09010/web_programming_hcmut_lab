@@ -1,0 +1,48 @@
+
+.logo-picture{
+    width: 300px;
+    border-radius: 11px;
+    border: 7px solid red;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-shadow: 5px 5px blue;
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+h2{
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about p::first-letter{
+    font-size: 50px;
+}
+.about span{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.about span:last-child{
+    font-style: italic;
+
+}
+.usa-item.active{
+    color: red;
+}  
+table,th,td {
+    border-collapse: collapse;
+    border: 2px solid rgb(182, 178, 178);
+}
+td{
+text-align: center;
+}
+.social-item{
+    color:rgb(104, 153, 137);
+    text-shadow: 2px 2px 4px black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+

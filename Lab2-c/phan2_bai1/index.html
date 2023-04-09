@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="px-16">
+    <div class="flex justify-between text-gray my-5">
+      <button class="create bg-slate-500 rounded-md p-3 underline-offset-1">
+        Create Table
+      </button>
+      <button class="add-row bg-slate-500 rounded-md p-3 underline-offset-1">
+        Add Row
+      </button>
+      <button class="add-col bg-slate-500 rounded-md p-3 underline-offset-1">
+        Add Column
+      </button>
+      <button class="del-all bg-slate-500 rounded-md p-3 underline-offset-1">
+        Delete All
+      </button>
+      <button class="del-row bg-slate-500 rounded-md p-3 underline-offset-1">
+        Delete Row
+        <input
+          type="number bg-slate-500 rounded-md p-3 underline-offset-1"
+          name="d-row"
+          id="d-row"
+          placeholder="Row delete"
+        />
+      </button>
+      <button class="del-col bg-slate-500 rounded-md p-3 underline-offset-1">
+        Delete Column
+        <input type="number" name="d-col" id="d-col" placeholder="Col delete" />
+      </button>
+      <button class="edit bg-slate-500 rounded-md p-3 underline-offset-1">
+        Edit
+      </button>
+    </div>
+    <section id="table"></section>
+    <button class="save bg-slate-500 rounded-md p-3 underline-offset-1">
+      Save
+    </button>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg-body.png);
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-position-x: 50%;
+    background-size: 83.5% 100%;
+    background-color: white;
+    width: 700px;
+    margin: auto;
+}
+
+.pic {
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    position: absolute;
+    color: gray;
+    font-style: italic;
+    padding: 30px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background-image: url(bg-menu.png);
+    background-size: cover;
+    height: 35px;
+    list-style: none;
+}
+
+.menu-item {
+    color: white;
+    padding-left: 20px;
+}
+.side {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(224, 216, 216);
+    width: 30%;
+    height: 250px;
+    position: relative;
+    border-radius: 0 0 20px 20px;
+
+}
+
+span {
+    padding-top: 5px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    line-height: 1.5;
+    padding-left: 5px;
+}
+
+main {
+    display: flex;
+    height: 70vh;
+    padding-right: 10px;
+    background-color: #fff;
+}
+
+.abc {
+    width: 95%;
+}
+
+.content {
+    padding:5px;
+
+}
+
+h2 {
+    color:green;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+.post {
+    color: grey;
+    font-size: 15px;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    color:aqua;
+}
+
+.live-feed {
+    position: absolute;
+    width: 120px;
+    padding-left: 35px;
+}
+footer {
+    background-image: url(bg-footer.jpg);
+    height: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-left: 35px;
+    color: white;
+}
